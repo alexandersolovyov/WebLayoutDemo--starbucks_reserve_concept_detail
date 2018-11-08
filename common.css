@@ -1,0 +1,353 @@
+/*
+ * File: common.css
+ *
+ * Description:
+ *  Main style sheet for Starbucks Reserve Concept Detail page
+ *  (made as an excersise of web layout skills)
+ *
+ * Author:
+ *  Aleksandr Solovyov - alexandersolovyov, 2018
+ *
+ * Contents:
+ *  Reset
+ *  Base
+ *  Module
+ *  Layout
+ *  State
+ *  Theme
+ *  Media
+ */
+
+/*--------------------------------------------------------------
+ * Reset
+ * http://meyerweb.com/eric/tools/css/reset/
+ *    v2.0 | 20110126
+ *    License: none (public domain)
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+  content: none;
+}
+table {
+border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*--------------------------------------------------------------
+ * Base
+ */
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Yantramanav";
+  font-weight: normal;
+  font-size: 1em;
+  background-color: rgb(230,211,195);
+}
+
+q:before {
+  content:"\201C";
+}
+q:after {
+  content:"\201D";
+}
+
+sub,sup {
+  font-size: 0.2em;
+}
+
+sup {
+  vertical-align: top;
+}
+
+header {
+  font-family: "Roboto";
+  font-weight: normal;
+}
+
+h1,h2,h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.9em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  line-height: 1.2;
+}
+
+p {
+  color: rgb(139, 139, 139);
+  line-height: 1.4;
+  font-size: 1em;
+}
+
+/*--------------------------------------------------------------
+ * Module
+ * (reusable parts)
+ */
+
+.navbar3>ul {
+  width: 100%;
+  text-align: center;
+}
+.navbar3 li {
+  display: inline-block;
+}
+.navbar3 li:first-child {
+  float: left;
+  text-align: left;
+}
+.navbar3 li:last-child {
+  float: right;
+  text-align: right;
+}
+.navbar3 a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.navbar3 button {
+  border: none;
+  background: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.u-fixSizing,
+.u-fixSizing:before,
+.u-fixSizing:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+ * Layout
+ */
+
+/* Basic layout
+ */
+
+.sheet {
+  display: table;
+  background-color: white;
+  width: 90%;
+  max-width: 1600px;
+  min-width: 1000px;
+  margin: 4% auto 4% auto;
+  /*padding: 2em 3em 2em 3em;*/
+  padding: 3em 5em 3em 5em;
+  box-shadow: 0px 0px 10px 0px rgb(181, 170, 160);
+}
+
+.main,
+.mainFooter {
+  display: table-row;
+}
+
+.mainHeader,
+.mainFooter {
+  position: relative;
+}
+
+.main {
+  line-height: 1;
+}
+
+/* Main Header
+ */
+
+.mainHeader {
+  margin-bottom: 3em;
+  font-size: 16px;
+}
+
+.mainHeader li:first-child,
+.mainHeader li:last-child {
+  padding-top: 1em;
+}
+
+.logo {
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0.3em;
+}
+
+.logo>div {
+  position: relative;
+  padding-top: 0.2em;
+  font-size: 1.2em;
+}
+
+.logo>.iconStar1 {
+  width: 2.2em;
+  border-bottom: 2px solid;
+  font-size: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 0;
+}
+
+.logo>div>sub {
+  position: absolute;
+  bottom: 0.8em;
+  right: 0;
+}
+
+.logoText {
+  position: relative;
+  vertical-align: middle;
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  margin: 0.5em;
+}
+
+.logoText>sup {
+  position: absolute;
+  font-weight: 400;
+  letter-spacing: normal;
+  top: 1em;
+  right: 0;
+}
+
+/* Main content
+ */
+
+figure {
+  position: relative;
+  overflow: hidden;
+  font-size: 0;
+  float: left;
+  width: 56%;
+  /* max-width: 697px + 18px; */
+  max-width: 715px;
+}
+
+img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 18px;
+  padding-bottom: 18px;
+}
+
+.figure-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(230,211,195);
+  width: 66%;
+  height: 97%;
+}
+
+.content,
+.main>header {
+  padding-left: 2.4em;
+}
+
+.main>header {
+  display: inline-block;
+  width: 44%;
+}
+
+.content-logoText {
+  text-align: justify;
+  font-size: 2em;
+  font-size: 2.4vw;
+  font-weight: 700;
+  color: rgb(249, 249, 249);
+  letter-spacing: 0.1em;
+  margin-top: -0.2em;
+}
+
+header>p {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
+}
+
+header>p:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  width: 28%;
+  top: 0;
+  left: 0;
+  border: 2px solid rgb(177, 108, 46);
+  border-left: none;
+  border-right: none;
+}
+
+/* Main Footer
+ */
+
+.mainFooter {
+  margin-top: 1em;
+}
+
+/*--------------------------------------------------------------
+ * State
+ * (when states of elements changes)
+ */
+
+/*--------------------------------------------------------------
+ * Theme
+ * (styling modules)
+ */
+
+/*--------------------------------------------------------------
+ * Media
+ */
+@media screen and (max-width: 1000px) {
+  .sheet {
+    margin: 0;
+  }
+  .content-logoText {
+    font-size: 1.6em;
+  }
+}

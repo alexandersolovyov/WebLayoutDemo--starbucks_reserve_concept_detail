@@ -1,0 +1,24 @@
+Fonts list to choose from
+
+Here are only fonts for free use in web.
+The higher font name the better match.
+
+Logo, controls: (original: Brandon Text Bold (Humanist Sans))
+    
+    Roboto
+    Raleway
+
+  Needed styles: bold.
+
+Paragraph: (original: Rwanda, (Humanist Sans))
+
+    Yantramanav
+    Roboto
+    Hind Gutur
+    Amiko
+
+  Needed styles: normal 400, bold 700.
+
+Icons font:
+
+    use pictures or compilled font
