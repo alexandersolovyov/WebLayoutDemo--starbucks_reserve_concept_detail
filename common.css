@@ -273,7 +273,8 @@ img {
   padding-bottom: 18px;
 }
 
-.figure-shadow {
+figure:before {
+  content: " ";
   position: absolute;
   bottom: 0;
   left: 0;
