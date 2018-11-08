@@ -117,6 +117,12 @@ h1 {
   line-height: 1.2;
 }
 
+h2 {
+  font-size: 1.2em;
+  margin-top: 1.6em;
+  margin-bottom: 0.4em;
+}
+
 p {
   color: rgb(139, 139, 139);
   line-height: 1.4;
@@ -286,11 +292,8 @@ figure:before {
 .content,
 .main>header {
   padding-left: 2.4em;
-}
-
-.main>header {
-  display: inline-block;
   width: 44%;
+  display: inline-block;
 }
 
 .content-logoText {
@@ -322,6 +325,10 @@ header>p:before {
   border: 2px solid rgb(177, 108, 46);
   border-left: none;
   border-right: none;
+}
+
+.content>p {
+  font-size: 1.1em;
 }
 
 /* Main Footer
