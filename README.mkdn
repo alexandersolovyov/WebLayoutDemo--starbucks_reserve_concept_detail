@@ -1,0 +1,21 @@
+# Demonstration of web page layout: Starbucks Reserve Concept Detail page
+
+This is one of pages made for demonstration (and also my training) of web page
+layout skills.
+
+You can see the page by using [this
+link](https://raw.githack.com/alexandersolovyov/WebLayoutDemo--starbucks_reserve_concept_detail/master/index.html).
+
+Design for this page is taken from
+[Starbucks Reserve Concept Detail of Mert Yagci at
+Dribble.com](https://dribbble.com/shots/5396495-Starbucks-Reserve-Concept-Detail-Page?utm_source=Clipboard_Shot&utm_campaign=mertyagci&utm_content=Starbucks%20Reserve%20Concept%20Detail%20Page&utm_medium=Social_Share).
+
+## Technical details
+
+There are only simplest technologies used for this project:
+
+- HTML5,
+- CSS3,
+- JavaScript.
+
+This page was NOT adapted and tested for Internet Explorer 8 and lower.
