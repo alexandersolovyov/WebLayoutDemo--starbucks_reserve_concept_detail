@@ -111,7 +111,7 @@ h1,h2,h3 {
 }
 
 h1 {
-  font-size: 2.9em;
+  font-size: 3.1em;
   margin-top: 0.6em;
   margin-bottom: 0.6em;
   line-height: 1.2;
@@ -126,7 +126,7 @@ h2 {
 p {
   color: rgb(139, 139, 139);
   line-height: 1.4;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 /*--------------------------------------------------------------
@@ -295,10 +295,12 @@ figure:before {
   padding-left: 2.4em;
   width: 44%;
   display: inline-block;
+  font-family: "Yantramanav";
 }
 
 .content-logoText {
   text-align: justify;
+  font-family: "Roboto";
   font-size: 2em;
   font-size: 2.4vw;
   font-weight: 700;
@@ -326,10 +328,6 @@ header>p:before {
   border: 2px solid rgb(177, 108, 46);
   border-left: none;
   border-right: none;
-}
-
-.content>p {
-  font-size: 1.1em;
 }
 
 /* Main Footer
