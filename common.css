@@ -14,7 +14,6 @@
  *  Module
  *  Layout
  *  State
- *  Theme
  *  Media
  */
 
@@ -101,7 +100,8 @@ sup {
   vertical-align: top;
 }
 
-header {
+header,
+footer{
   font-family: "Roboto";
   font-weight: normal;
 }
@@ -336,7 +336,34 @@ header>p:before {
  */
 
 .mainFooter {
-  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.mainFooter>ul {
+  margin-top: 2em;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+}
+
+.mainFooter-prevLink:before,
+.mainFooter-nextLink:after {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 2px solid;
+  width: 3em;
+}
+
+.mainFooter-prevLink:before {
+  margin-right: 2em;
+}
+.mainFooter-nextLink:after {
+  margin-left: 2em;
+}
+
+.social>li>button {
+  color: rgb(219, 219, 219);
+  font-size: 1.2em;
 }
 
 /*--------------------------------------------------------------
@@ -344,10 +371,15 @@ header>p:before {
  * (when states of elements changes)
  */
 
-/*--------------------------------------------------------------
- * Theme
- * (styling modules)
- */
+.mainFooter-prevLink:hover,
+.mainFooter-nextLink:hover {
+  color: rgb(189, 130, 78);
+  font-weight: 700;
+}
+
+.social>li>button:hover {
+  color: rgb(189, 130, 78);
+}
 
 /*--------------------------------------------------------------
  * Media
