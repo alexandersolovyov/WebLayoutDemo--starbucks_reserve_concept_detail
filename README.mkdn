@@ -16,6 +16,10 @@ There are only simplest technologies used for this project:
 
 - HTML5,
 - CSS3,
-- JavaScript.
+- JavaScript,
+- Google Fonts,
+- Custom-compilled icon font.
+
+All fonts used in this project are free for use in web pages.
 
 This page was NOT adapted and tested for Internet Explorer 8 and lower.
