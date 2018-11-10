@@ -129,8 +129,8 @@ p {
   font-size: 1.1em;
 }
 
-article {
-  display: inline-block;
+section {
+  display: inline;
 }
 
 /*--------------------------------------------------------------
@@ -356,6 +356,10 @@ header>p:before {
   border: 2px solid rgb(177, 108, 46);
   border-left: none;
   border-right: none;
+}
+
+.content>section>p {
+  margin-bottom: -1em;
 }
 
 /* Main Footer
