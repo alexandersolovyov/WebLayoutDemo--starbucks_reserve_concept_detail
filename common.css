@@ -142,27 +142,50 @@ article {
   width: 100%;
   text-align: center;
 }
-.navbar3 li {
+.navbar3>ul>li {
   display: inline-block;
 }
-.navbar3 li:first-child {
+.navbar3>ul>li:first-child {
   float: left;
   text-align: left;
 }
-.navbar3 li:last-child {
+.navbar3>ul>li:last-child {
   float: right;
   text-align: right;
 }
-.navbar3 a {
+.navbar3>ul>li>a {
   display: block;
   text-decoration: none;
   color: black;
 }
-.navbar3 button {
+.navbar3>ul>li>button {
   border: none;
   background: inherit;
   cursor: pointer;
   padding: 0;
+}
+
+.dropDown {
+  position: absolute;
+  display: none;
+  z-index: 20;
+}
+.dropDown>ul {
+  box-shadow: 1px 1px 3px 1px rgb(68, 68, 68);
+}
+.dropDown>ul>li {
+  display: block;
+  text-align: left;
+}
+.dropDown>ul>li>a {
+  display: block;
+  color: black;
+  font-size: 1.2em;
+  padding: 0.6em;
+  background-color: rgb(206, 200, 200);
+}
+.dropDown>ul>li>a:hover {
+  color: rgb(55, 60, 119);
 }
 
 .u-fixSizing,
@@ -214,8 +237,8 @@ article {
   font-size: 16px;
 }
 
-.mainHeader li:first-child,
-.mainHeader li:last-child {
+.mainHeader>ul>li:first-child,
+.mainHeader>ul>li:last-child {
   padding-top: 1em;
 }
 
