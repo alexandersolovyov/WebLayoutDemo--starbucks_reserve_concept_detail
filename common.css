@@ -348,6 +348,11 @@ header>p:before {
   letter-spacing: 0.1em;
 }
 
+.mainFooter-prevLink,
+.mainFooter-nextLink {
+  width: 9em;
+}
+
 .mainFooter-prevLink:before,
 .mainFooter-nextLink:after {
   content: " ";
