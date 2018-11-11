@@ -129,10 +129,6 @@ p {
   font-size: 1.1em;
 }
 
-section {
-  display: inline;
-}
-
 /*--------------------------------------------------------------
  * Module
  * (reusable parts)
@@ -298,7 +294,7 @@ figure {
  */
   max-width: 713px;
   margin-right: 39px;
-  margin-bottom: 39px;
+  margin-bottom: 33px;
 }
 
 img {
@@ -358,19 +354,18 @@ header>p:before {
   border-right: none;
 }
 
-.content>section>p {
-  margin-bottom: -1em;
+.content>p {
+  margin-bottom: 1em;
 }
 
 /* Main Footer
  */
 
 .mainFooter {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .mainFooter>ul {
-  margin-top: 2em;
   line-height: 1.4;
   letter-spacing: 0.1em;
 }
@@ -398,7 +393,7 @@ header>p:before {
 
 .social>li>button {
   color: rgb(219, 219, 219);
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 
 /*--------------------------------------------------------------
